@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "url-updater": "./index.js"
+  },
   "keywords": [
     "search",
     "and",
@@ -14,5 +17,8 @@
     "unzip"
   ],
   "author": "Juan Carlos Ruiz <JuanCrg90@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
 }
