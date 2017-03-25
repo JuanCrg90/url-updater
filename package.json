@@ -1,7 +1,7 @@
 {
   "name": "url-updater",
   "version": "1.0.0",
-  "description": "CLI Tool for update staging links to production",
+  "description": "CLI Tool for update links in a zip file",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +19,7 @@
   "author": "Juan Carlos Ruiz <JuanCrg90@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "replace": "^0.3.0"
   }
 }
