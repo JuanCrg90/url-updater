@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 var program = require('commander');
-var searchAndReplace = require('./lib/utils').searchAndReplace;
+var searchAndReplace = require('./lib/search-and-replace');;
 var isCompressed = require('./lib/utils').isCompressed;
 var removeExtension = require('./lib/utils').removeExtension;
 var removeUnzipped = require('./lib/utils').removeUnzipped;
@@ -9,7 +9,7 @@ var zipFile = require('./lib/zipFile');
 
 program
   .arguments('<filePath>')
-  .option('-s, --search <search-url>', 'URL to seach')
+  .option('-s, --search <search-url>', 'URL to search')
   .option('-r, --replace <replace-url>', 'New URL')
   .action(function(filePath) {
     if(isCompressed(filePath)) {
